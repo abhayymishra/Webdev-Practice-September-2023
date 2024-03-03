@@ -1,0 +1,109 @@
+* {
+    background-color: cornsilk;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    border: 2px dotted black;
+    background-color: aqua;
+}
+
+section div {
+    text-align: center;
+}
+
+img {
+   padding: 100px;
+   width: 200px;
+   float: right;
+   margin-top: 120px; 
+}
+
+.navbar {
+    text-decoration: underline;
+    text-align: center;
+    height: 100px;
+    position: relative;
+}
+
+
+.navbar button {
+    border-radius: 5px;
+    background-color: rgb(204, 110, 110);
+    font-size: large;
+    display: block;
+}
+
+.btn1 {
+    background-color: red;
+}
+
+h4 {
+    position: absolute;
+    float: right;
+}
+
+@media screen and (max-width : 992px) {
+    * {
+        background-color: crimson;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about {
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+
+
+@media screen and (max-width : 768px){
+    * {
+        background-color: green;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    img {
+        align-items: center;
+    }
+
+    .about {
+        text-decoration: line-through;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    * {
+        background-color: brown;
+    }
+}
+
+@media print {
+    * {
+        color: black;
+    }
+
+    * {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 768px), (min-width: 992px) {
+    h4 {
+        font-size: 30px;
+        color: blueviolet;
+        text-transform: capitalize;
+    }
+}
